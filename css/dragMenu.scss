@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: #494A5F;
+  height: 100%;
+  overflow: hidden;
+}
+
+button {
+  background: none;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+h1{
+  color: #fff;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.icon {
+  background: url("../img/icon.png") no-repeat;
+  display: inline-block;
+}
+
+//设置
+.icon-setting {
+  width: 46px;
+  height: 46px;
+  background-position: -276px -614px;
+}
+
+//个人中心
+.icon-myCenter {
+  width: 39px;
+  height: 43px;
+  background-position: -752px -1849px;
+}
+
+//通知
+.icon-notice {
+  width: 39px;
+  height: 45px;
+  background-position: -752px -799px;
+}
+
+//表情
+.icon-expression {
+  width: 44px;
+  height: 44px;
+  background-position: -444px -445px;
+}
+
+//收藏
+.icon-collection {
+  width: 44px;
+  height: 42px;
+  background-position: -601px -968px;
+}
+
+
+
+//按钮组
+.btnGroup {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  height: 1px;
+  .item {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    animation: all ease-in-out 10s;
+    &:first-child {
+      background: #fff;
+      z-index: 6;
+    }
+    &:nth-child(2) {
+      background: rgb(255, 92, 92);
+      z-index: 5;
+    }
+    &:nth-child(3) {
+      background: rgb(92, 209, 255);
+      z-index: 4;
+    }
+    &:nth-child(4) {
+      background: rgb(255, 241, 92);
+      z-index: 3;
+    }
+    &:nth-child(5) {
+      background: rgb(100, 245, 146);
+      z-index: 2;
+    }
+  }
+}
